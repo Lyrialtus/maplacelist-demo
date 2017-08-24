@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="px-0">
     <v-layout v-if="loading">
       <v-flex xs12 class="text-xs-center" style="margin-top: 15vh">
         <v-progress-circular
@@ -32,7 +32,7 @@
                 {{ place.location }}
               </v-list-tile-sub-title>
             </v-list-tile-content>
-            <v-list-tile-action>
+            <v-list-tile-action class="pr-1">
               <v-btn light class="mini" @click.native.stop="onGo(place)">
                 <v-icon class="hidden-sm-and-up">pin_drop</v-icon>
                 <div class="hidden-xs-only">
@@ -40,7 +40,7 @@
                 </div>
               </v-btn>
             </v-list-tile-action>
-            <v-list-tile-action class="ml-3">
+            <v-list-tile-action class="pl-2 pr-4">
               <v-btn light class="mini" @click.native.stop="onDelete(place.id)">
                 <v-icon class="hidden-sm-and-up">highlight_off</v-icon>
                 <div class="hidden-xs-only">

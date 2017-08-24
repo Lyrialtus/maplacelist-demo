@@ -27,7 +27,7 @@
           </div>
         </v-btn>
       </v-toolbar-items>
-      <v-spacer class="hidden-sm-and-up"></v-spacer>
+      <v-spacer class="hidden-sm-and-up mr-0"></v-spacer>
     </v-toolbar>
     <main>
       <router-view></router-view>
